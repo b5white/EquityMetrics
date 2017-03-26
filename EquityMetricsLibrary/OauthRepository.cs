@@ -16,7 +16,7 @@ namespace EquityMetrics.Retrieve {
       private static string AUTHORIZE_URL = "https://us.etrade.com/e/t/etws/authorize";
       private static string LOGON_URL = "https://us.etrade.com/home";
       private static string ACCESS_URL = "https://etws.etrade.com/oauth/access_token";
-      private static string USERNAME = ite";
+      private static string USERNAME = "b55white";
       private static string PASSWORD = "1q2w#E$R";
 
       private readonly TokenBase _tokenBase;
