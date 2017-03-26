@@ -1,0 +1,49 @@
+ 	     StockId  int NOT NULL,
+        AdjNonAdjFlag  bit NOT NULL,    -- Indicates whether an option has been adjusted due to a corporate action (e.g. a dividend or stock split). Possible values are TRUE, FALSE.
+        AnnualDividend  float NOT NULL,    -- Cash amount paid per share over the past year
+        Ask  float NOT NULL,    -- The current ask price for a security
+        AskExchange  char(5) NOT NULL,    -- Code for the exchange reporting the ask price. Exchange codes are listed in a separate table below.
+        AskSize  bigint NOT NULL,    -- Number of shares or contracts offered by a broker/dealer at the ask price
+        AskTime  datetime NOT NULL,    -- Time of the ask, e.g., "15:15:43 EDT 03-15-2011"
+        Beta  float NOT NULL,    -- A measure of a stock's volatility relative to the primary market index
+        Bid  float NOT NULL,    -- Current bid price for a security
+        BidExchange  char(5) NOT NULL,    -- Code for the exchange reporting the bid price. Exchange codes are listed in a separate table below.
+        BidSize  bigint NOT NULL,    -- Number of shares or contracts offered at the bid price
+        BidTime  datetime NOT NULL,    -- Time of the bid, e.g., "15:15:43 EDT 03-15-2011"
+        ChgClose  float NOT NULL,    -- Dollar change of the last price from the previous close
+        ChgClosePrcn  float NOT NULL,    -- Percentage change of the last price from the previous close
+        CompanyName  char(40) NOT NULL,    -- Name of the company or mutual fund. (Shows up to 40 characters.)
+        DaysToExpiration  bigint NOT NULL,    -- Number of days before the option expires
+        DirLast  char(10) NOT NULL,    -- Direction of movement, i.e., whether the current price is higher or lower than the price of the most recent trade
+        Dividend  float NOT NULL,    -- Cash amount per share of the latest dividend
+        Eps  float NOT NULL,    -- Earnings per share on a rolling basis. (Stocks only.)
+        EstEarnings  float NOT NULL,    -- Projected earnings per share for the next fiscal year. (Stocks only.)
+        ExDivDate  char(15) NOT NULL,    -- Date on which shareholders were entitled to receive the latest dividend, in epoch time.
+        ExchgLastTrade  char(5) NOT NULL,    -- Code for the exchange of the last trade. Exchange codes are listed in a separate table below.
+        Fsi  char(1) NOT NULL,    -- Financial Status Indicator - indicates whether a Nasdaqlisted issuer has failed to submit its regulatory filings on a
+        High  float NOT NULL,    -- Highest price at which a security has traded during the current day
+        High52  float NOT NULL,    -- Highest price at which a security has traded during the past year (52 weeks). For options, this value is the lifetime high.
+        HighAsk  float NOT NULL,    -- Highest ask price for the current trading day
+        HighBid  float NOT NULL,    -- Highest bid price for the current trading day
+        LastTrade  float NOT NULL,    -- Price of the most recent trade in a security
+        Low  float NOT NULL,    -- Lowest price at which a security has traded during the current day
+        Low52  float NOT NULL,    -- Lowest price at which a security has traded during the past year (52 weeks). For options, this value is the lifetime low.
+        LowAsk  float NOT NULL,    -- Lowest ask price for the current trading day
+        LowBid  float NOT NULL,    -- Lowest bid price for the current trading day
+        NumTrades  bigint NOT NULL,    -- Number of transactions that involve buying a security from another entity
+        [Open]  float NOT NULL,    -- Price of a security at the current day's market open
+        OpenInterest  bigint NOT NULL,    -- Total number of options or futures contracts that are not closed or delivered on a particular day
+        OptionStyle  char(10) NOT NULL,    -- Specifies how the contract treats the expiration date. Possible values are "European" (options can be exercised only on the expiration date) or "American" (options can be exercised any time before it expires).
+        OptionUnderlier  char(8) NOT NULL,    -- Symbol for the underlier. (Options only.)
+        PrevClose  float NOT NULL,    -- Official price at the close of the previous trading day
+        PrevDayVolume  bigint NOT NULL,    -- Final volume from the previous market session
+        PrimaryExchange  char(5) NOT NULL,    -- Exchange code of the primary listing exchange for this instrument. (Exchange codes are listed in a separate table below.)
+        SymbolDesc  char(25) NOT NULL,    -- Description of the security - e.g., the company name or option description.
+        TodayClosed  float NOT NULL,    -- Price at the close of the regular trading session for the current day.
+        TotalVolume  bigint NOT NULL,    -- Total number of shares or contracts exchanging hands.
+        Upc  bigint NOT NULL,    -- Uniform Practice Code - identifies specific FINRA advisories detailing unusual circumstances (e.g., extremely large dividends, when-issued settlement dates, and worthless securities).
+        Volume10Day  bigint NOT NULL,    -- Ten-day average trading volume for the security
+        DateTime  datetime NOT NULL,    -- Time of this quote, e.g., "15:15:43 EDT 03-15-2011"
+        Symbol  char(8) NOT NULL,    -- Market trading symbol for the stock
+        Type  char(5) NOT NULL,    -- Type of security. Possible values are: EQ and OPTN.
+        Exchange  char(5) NOT NULL,    -- Exchange that lists this company. (Exchange codes are listed in a separate table below.)

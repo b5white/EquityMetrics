@@ -1,0 +1,5 @@
+
+AssemblyInfo.cs
+filelist.txt
+Settings.Designer.cs
+Settings.settings

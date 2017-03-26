@@ -1,0 +1,5 @@
+
+Delisted.txt
+filelist.txt
+Quote.txt
+Russel3000.txt

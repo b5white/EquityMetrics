@@ -1,0 +1,9 @@
+
+App.config
+Class1.cs
+Class2.cs
+EquityMetricsConsole.csproj
+EquityMetricsConsole.csproj.user
+filelist.txt
+Program.cs
+Settings.cs

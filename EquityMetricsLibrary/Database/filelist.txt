@@ -1,0 +1,15 @@
+
+CREATE_StockQuotes_Save.sql
+CREATE_StockSymbols_GetAll.sql
+CREATE_StockSymbols_GetByID.sql
+CREATE_StockSymbols_GetBySymbol.sql
+CREAT_StockQuotes_GetBySymbol.sql
+CREAT_StockQuotes_Save.sql
+filelist.txt
+FormatSQL.awk
+RunFormatSQL.bat
+Russel3000.sql
+StockList.sql
+StockList.txt
+StockQuotes.sql
+StockSymbols.sql
